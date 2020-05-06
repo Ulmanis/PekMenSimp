@@ -56,6 +56,8 @@ namespace PekMenSimp
             TimerAnimate.Start();
 
             RandomChangeEnemyDirection();
+
+            CoffinMan.Visible = false;
         }
 
         private void HeroFoodCollision()
@@ -285,6 +287,7 @@ namespace PekMenSimp
             {
                 TimerHeroMelt.Stop();
                 LabelGameOver.Visible = true;
+                CoffinMan.Visible = true;
             }
         }
 

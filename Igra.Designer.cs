@@ -30,42 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Igra));
-            this.Hero = new System.Windows.Forms.PictureBox();
-            this.Food = new System.Windows.Forms.PictureBox();
-            this.Enemy = new System.Windows.Forms.PictureBox();
             this.TimerMove = new System.Windows.Forms.Timer(this.components);
             this.TimerAnimate = new System.Windows.Forms.Timer(this.components);
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.TimerHeroMelt = new System.Windows.Forms.Timer(this.components);
             this.LabelGameOver = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Hero)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Food)).BeginInit();
+            this.CoffinMan = new System.Windows.Forms.PictureBox();
+            this.Enemy = new System.Windows.Forms.PictureBox();
+            this.Food = new System.Windows.Forms.PictureBox();
+            this.Hero = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.CoffinMan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Enemy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Food)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hero)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Hero
-            // 
-            this.Hero.Location = new System.Drawing.Point(104, 100);
-            this.Hero.Name = "Hero";
-            this.Hero.Size = new System.Drawing.Size(91, 88);
-            this.Hero.TabIndex = 0;
-            this.Hero.TabStop = false;
-            // 
-            // Food
-            // 
-            this.Food.Location = new System.Drawing.Point(294, 138);
-            this.Food.Name = "Food";
-            this.Food.Size = new System.Drawing.Size(50, 50);
-            this.Food.TabIndex = 1;
-            this.Food.TabStop = false;
-            // 
-            // Enemy
-            // 
-            this.Enemy.Location = new System.Drawing.Point(556, 196);
-            this.Enemy.Name = "Enemy";
-            this.Enemy.Size = new System.Drawing.Size(80, 80);
-            this.Enemy.TabIndex = 2;
-            this.Enemy.TabStop = false;
             // 
             // TimerMove
             // 
@@ -94,6 +72,7 @@
             // LabelGameOver
             // 
             this.LabelGameOver.AutoSize = true;
+            this.LabelGameOver.BackColor = System.Drawing.Color.Transparent;
             this.LabelGameOver.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.LabelGameOver.ForeColor = System.Drawing.Color.OrangeRed;
             this.LabelGameOver.Location = new System.Drawing.Point(233, 191);
@@ -103,11 +82,45 @@
             this.LabelGameOver.Text = "Game Over";
             this.LabelGameOver.Visible = false;
             // 
+            // CoffinMan
+            // 
+            this.CoffinMan.Image = global::PekMenSimp.Properties.Resources.CoffinMan;
+            this.CoffinMan.Location = new System.Drawing.Point(12, 9);
+            this.CoffinMan.Name = "CoffinMan";
+            this.CoffinMan.Size = new System.Drawing.Size(766, 432);
+            this.CoffinMan.TabIndex = 5;
+            this.CoffinMan.TabStop = false;
+            // 
+            // Enemy
+            // 
+            this.Enemy.Location = new System.Drawing.Point(556, 196);
+            this.Enemy.Name = "Enemy";
+            this.Enemy.Size = new System.Drawing.Size(80, 80);
+            this.Enemy.TabIndex = 2;
+            this.Enemy.TabStop = false;
+            // 
+            // Food
+            // 
+            this.Food.Location = new System.Drawing.Point(294, 138);
+            this.Food.Name = "Food";
+            this.Food.Size = new System.Drawing.Size(50, 50);
+            this.Food.TabIndex = 1;
+            this.Food.TabStop = false;
+            // 
+            // Hero
+            // 
+            this.Hero.Location = new System.Drawing.Point(104, 100);
+            this.Hero.Name = "Hero";
+            this.Hero.Size = new System.Drawing.Size(91, 88);
+            this.Hero.TabIndex = 0;
+            this.Hero.TabStop = false;
+            // 
             // Igra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CoffinMan);
             this.Controls.Add(this.LabelGameOver);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.Enemy);
@@ -117,9 +130,10 @@
             this.Name = "Igra";
             this.Text = "SimpMan 0.1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Igra_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.Hero)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Food)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CoffinMan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Enemy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Food)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Hero)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,6 +149,7 @@
         private System.Windows.Forms.Label ScoreLabel;
         private System.Windows.Forms.Timer TimerHeroMelt;
         private System.Windows.Forms.Label LabelGameOver;
+        private System.Windows.Forms.PictureBox CoffinMan;
     }
 }
 

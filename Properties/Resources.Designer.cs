@@ -63,6 +63,16 @@ namespace PekMenSimp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CoffinMan {
+            get {
+                object obj = ResourceManager.GetObject("CoffinMan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap enemy_down_1 {
             get {
                 object obj = ResourceManager.GetObject("enemy_down_1", resourceCulture);
