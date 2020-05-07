@@ -226,6 +226,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pac-man.ico" />
+    <Resource Include="Resources\mod_coffin_dance.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\med_coffin_dance.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <None Include="Resources\Gameover.png" />
     <None Include="Resources\CoffinMan.jpeg" />
     <None Include="Resources\CoffinMan.png" />

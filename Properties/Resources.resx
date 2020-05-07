@@ -160,6 +160,12 @@
   <data name="Gameover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gameover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="med_coffin_dance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\med_coffin_dance.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mod_coffin_dance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mod_coffin_dance.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pacman_down_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pacman_down_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

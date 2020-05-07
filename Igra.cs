@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace PekMenSimp
 {
@@ -59,6 +60,15 @@ namespace PekMenSimp
 
             GameOverBox.Visible = false;
 
+            try
+            {
+                SoundPlayer sndPlayer = new SoundPlayer(Properties.Resources.med_coffin_dance);
+                sndPlayer.Play();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error Message - " + ex.Message);
+            }
         }
 
         private void HeroFoodCollision()
@@ -286,14 +296,25 @@ namespace PekMenSimp
             heroImageCount += 1;
             string coffinImage;
             coffinImage = "coffin_men";
+            this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(coffinImage);
             if (heroImageCount > 14)
             {
                 TimerHeroMelt.Stop();
                 GameOverBox.Visible = true;
-                this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(coffinImage);
+                
                 Hero.Visible = false;
                 Food.Visible = false;
                 Enemy.Visible = false;
+                try
+                {
+                    SoundPlayer sndPlayer = new SoundPlayer(Properties.Resources.mod_coffin_dance);
+                    sndPlayer.Play();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error Message - " + ex.Message);
+                }
+
             }
         }
 
