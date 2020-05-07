@@ -85,7 +85,7 @@
             // CoffinMan
             // 
             this.CoffinMan.Image = global::PekMenSimp.Properties.Resources.CoffinMan;
-            this.CoffinMan.Location = new System.Drawing.Point(12, 9);
+            this.CoffinMan.Location = new System.Drawing.Point(12, 13);
             this.CoffinMan.Name = "CoffinMan";
             this.CoffinMan.Size = new System.Drawing.Size(766, 432);
             this.CoffinMan.TabIndex = 5;
@@ -119,13 +119,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.CoffinMan);
+            this.ClientSize = new System.Drawing.Size(790, 457);
             this.Controls.Add(this.LabelGameOver);
             this.Controls.Add(this.ScoreLabel);
-            this.Controls.Add(this.Enemy);
-            this.Controls.Add(this.Food);
+            this.Controls.Add(this.CoffinMan);
             this.Controls.Add(this.Hero);
+            this.Controls.Add(this.Food);
+            this.Controls.Add(this.Enemy);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Igra";
             this.Text = "SimpMan 0.1";
