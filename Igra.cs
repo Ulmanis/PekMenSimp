@@ -291,6 +291,9 @@ namespace PekMenSimp
                 TimerHeroMelt.Stop();
                 GameOverBox.Visible = true;
                 this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(coffinImage);
+                Hero.Visible = false;
+                Food.Visible = false;
+                Enemy.Visible = false;
             }
         }
 
