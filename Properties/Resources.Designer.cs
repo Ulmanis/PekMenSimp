@@ -63,9 +63,9 @@ namespace PekMenSimp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CoffinMan {
+        internal static System.Drawing.Bitmap coffin_men {
             get {
-                object obj = ResourceManager.GetObject("CoffinMan", resourceCulture);
+                object obj = ResourceManager.GetObject("coffin_men", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +186,16 @@ namespace PekMenSimp.Properties {
         internal static System.Drawing.Bitmap food_4 {
             get {
                 object obj = ResourceManager.GetObject("food_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gameover {
+            get {
+                object obj = ResourceManager.GetObject("Gameover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

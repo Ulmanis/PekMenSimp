@@ -57,7 +57,8 @@ namespace PekMenSimp
 
             RandomChangeEnemyDirection();
 
-            CoffinMan.Visible = false;
+            GameOverBox.Visible = false;
+
         }
 
         private void HeroFoodCollision()
@@ -283,11 +284,13 @@ namespace PekMenSimp
             heroImageName = "pacman_melt_" + heroImageCount;
             Hero.Image = (Image)Properties.Resources.ResourceManager.GetObject(heroImageName);
             heroImageCount += 1;
+            string coffinImage;
+            coffinImage = "coffin_men";
             if (heroImageCount > 14)
             {
                 TimerHeroMelt.Stop();
-                LabelGameOver.Visible = true;
-                CoffinMan.Visible = true;
+                GameOverBox.Visible = true;
+                this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(coffinImage);
             }
         }
 
